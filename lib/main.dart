@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.purple),
+      theme: ThemeData(primarySwatch: Colors.lightGreen),
       home: const RootPage(),
     );
   }
@@ -31,7 +31,7 @@ class _RootPage extends State<RootPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Moj app"),
+        title: const Text("Bam-Boo"),
       ),
       body: const HomePage(),
       floatingActionButton: FloatingActionButton(
@@ -41,9 +41,12 @@ class _RootPage extends State<RootPage> {
         child: const Icon(Icons.add),
       ),
       bottomNavigationBar: NavigationBar(
+        backgroundColor: Colors.grey,
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.home), label: "Home"),
-          NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
+          NavigationDestination(icon: Icon(Icons.category), label: "Katalog"),
+          NavigationDestination(
+              icon: Icon(Icons.shopping_basket_outlined), label: "Košarica"),
+          NavigationDestination(icon: Icon(Icons.person), label: "Profil"),
         ],
         onDestinationSelected: (int index) {
           setState(() {
