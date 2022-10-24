@@ -14,7 +14,7 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Learn Flutter"),
+        title: const Text("Stolevi"),
         automaticallyImplyLeading: false,
         leading: IconButton(
             onPressed: () {

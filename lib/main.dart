@@ -34,12 +34,6 @@ class _RootPage extends State<RootPage> {
         title: const Text("Bam-Boo"),
       ),
       body: const HomePage(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          debugPrint("Floating action button");
-        },
-        child: const Icon(Icons.add),
-      ),
       bottomNavigationBar: NavigationBar(
         backgroundColor: Colors.grey,
         destinations: const [
