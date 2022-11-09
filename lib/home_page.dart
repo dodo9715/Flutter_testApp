@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown.shade100,
       body: SingleChildScrollView(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -19,19 +20,30 @@ class HomePage extends StatelessWidget {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
-                  child: Image.asset('images/stol.jpg'),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Image.asset('images/stol.jpg'),
+                  ),
                 ),
                 flex: 1,
               ),
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/stolica.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/stolica.jpg'),
+                    ),
+                  ),
                   flex: 1),
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/bed.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/bed.jpg'),
+                    ),
+                  ),
                   flex: 1),
             ],
           ),
@@ -69,18 +81,30 @@ class HomePage extends StatelessWidget {
             children: [
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/sofa.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/sofa.jpg'),
+                    ),
+                  ),
                   flex: 1),
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/regal.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/regal.jpg'),
+                    ),
+                  ),
                   flex: 1),
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/vrata.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/vrata.jpg'),
+                    ),
+                  ),
                   flex: 1),
             ],
           ),
@@ -118,18 +142,30 @@ class HomePage extends StatelessWidget {
             children: [
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/prozor.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/prozor.jpg'),
+                    ),
+                  ),
                   flex: 1),
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/ogledalo.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/ogledalo.jpg'),
+                    ),
+                  ),
                   flex: 1),
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/ormar.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/ormar.jpg'),
+                    ),
+                  ),
                   flex: 1),
             ],
           ),
@@ -167,18 +203,30 @@ class HomePage extends StatelessWidget {
             children: [
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/kupaona.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/kupaona.jpg'),
+                    ),
+                  ),
                   flex: 1),
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/fotelja.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/fotelja.jpg'),
+                    ),
+                  ),
                   flex: 1),
               Expanded(
                   child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Image.asset('images/klupa.jpg')),
+                    padding: const EdgeInsets.all(20.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset('images/klupa.jpg'),
+                    ),
+                  ),
                   flex: 1),
             ],
           ),
