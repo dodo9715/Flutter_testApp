@@ -1,3 +1,5 @@
+// ignore_for_file: sort_child_properties_last
+
 import 'package:flutter/material.dart';
 import 'package:test_app/learn_flutter_page.dart';
 
@@ -8,60 +10,209 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(children: [
-          const SizedBox(
-            height: 10,
-          ),
-          Image.network(
-            'https://www.godrejinterio.com/imagestore/B2C/56101543SD00017/56101543SD00017_01_1500x1500.png',
-            width: 200,
-            height: 100,
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.green,
-              padding: const EdgeInsets.all(20),
-            ),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return const LearnFlutterPage();
-                  },
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Image.asset('images/stol.jpg'),
                 ),
-              );
-            },
-            child: const Text("Stolevi"),
+                flex: 1,
+              ),
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/stolica.jpg')),
+                  flex: 1),
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/bed.jpg')),
+                  flex: 1),
+            ],
           ),
-          //const SizedBox(height: 10,),
-          const Divider(
-            color: Colors.black,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Stol"),
+                flex: 2,
+              ),
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Stolica"),
+                flex: 2,
+              ),
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Krevet"),
+                flex: 2,
+              ),
+            ],
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.green,
-              padding: const EdgeInsets.all(20),
-            ),
-            onPressed: () {
-              debugPrint("Stolice");
-            },
-            child: const Text("Stolice"),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/sofa.jpg')),
+                  flex: 1),
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/regal.jpg')),
+                  flex: 1),
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/vrata.jpg')),
+                  flex: 1),
+            ],
           ),
-        ]),
-      ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Sofa"),
+                flex: 2,
+              ),
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Regal"),
+                flex: 2,
+              ),
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Vrata"),
+                flex: 2,
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/prozor.jpg')),
+                  flex: 1),
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/ogledalo.jpg')),
+                  flex: 1),
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/ormar.jpg')),
+                  flex: 1),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Prozor"),
+                flex: 2,
+              ),
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Ogledalo"),
+                flex: 2,
+              ),
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Ormar"),
+                flex: 2,
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/kupaona.jpg')),
+                  flex: 1),
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/fotelja.jpg')),
+                  flex: 1),
+              Expanded(
+                  child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Image.asset('images/klupa.jpg')),
+                  flex: 1),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Kupaona"),
+                flex: 2,
+              ),
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Fotelja"),
+                flex: 2,
+              ),
+              Expanded(
+                child: Text(""),
+                flex: 1,
+              ),
+              Expanded(
+                child: Text("Klupa"),
+                flex: 2,
+              ),
+            ],
+          ),
+        ],
+      )),
     );
-
-    /*return Center(
-      child: ElevatedButton(
-        onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (BuildContext context) {
-              return const LearnFlutterPage();
-            }),
-          );
-        },
-        child: const Text("Stolevi"),
-      ),
-    );*/
   }
 }

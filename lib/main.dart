@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.lightGreen),
+      theme: ThemeData(primarySwatch: Colors.orange),
       home: const RootPage(),
     );
   }
@@ -31,16 +31,22 @@ class _RootPage extends State<RootPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Bam-Boo"),
+        title: const Text("Kategorije namještaja"),
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.orange.shade800,
       ),
       body: const HomePage(),
       bottomNavigationBar: NavigationBar(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.grey.shade300,
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.category), label: "Katalog"),
           NavigationDestination(
-              icon: Icon(Icons.shopping_basket_outlined), label: "Košarica"),
-          NavigationDestination(icon: Icon(Icons.person), label: "Profil"),
+              icon: Icon(Icons.chrome_reader_mode_outlined), label: "Katalog"),
+          NavigationDestination(
+              icon: Icon(Icons.shopping_cart_outlined), label: "Košarica"),
+          NavigationDestination(
+              icon: Icon(Icons.local_shipping_outlined), label: "Dostava"),
+          NavigationDestination(
+              icon: Icon(Icons.person_outline), label: "Profil"),
         ],
         onDestinationSelected: (int index) {
           setState(() {
